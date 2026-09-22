@@ -1,0 +1,46 @@
+DASHBOARD DATASET QUALITY REPORT
+======================================================================
+Source dataset: data/processed/patient_readmission_analysis.csv
+Dashboard dataset: data/processed/patient_readmission_dashboard.csv
+
+Rows: 101,766
+Columns: 25
+Missing values: 0
+Duplicate analytical rows: 1
+Target mismatches: 0
+
+Early-readmission distribution:
+  0: 90,409 (88.84%)
+  1: 11,357 (11.16%)
+
+Early-readmission rate: 11.16%
+
+Dashboard columns:
+  01. readmitted
+  02. early_readmission
+  03. race
+  04. gender
+  05. age
+  06. time_in_hospital
+  07. num_lab_procedures
+  08. num_procedures
+  09. num_medications
+  10. number_diagnoses
+  11. number_outpatient
+  12. number_emergency
+  13. number_inpatient
+  14. outpatient_visits_group
+  15. emergency_visits_group
+  16. inpatient_visits_group
+  17. diabetesMed
+  18. change
+  19. insulin
+  20. admission_type
+  21. discharge_disposition
+  22. admission_source
+  23. primary_diagnosis_category
+  24. secondary_diagnosis_category
+  25. tertiary_diagnosis_category
+
+======================================================================
+DASHBOARD DATASET STATUS: PASS

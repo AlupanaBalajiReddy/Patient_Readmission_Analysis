@@ -1,0 +1,531 @@
+======================================================================
+STAGE 5A: DIAGNOSIS & MEDICATION STRUCTURE EXPLORATION
+======================================================================
+
+Dataset shape: (101766, 50)
+
+======================================================================
+DIAGNOSIS COLUMN: diag_1
+======================================================================
+Data type: str
+Number of unique values: 717
+Missing values (NaN): 0
+Question-mark values: 21
+
+Top 30 values:
+diag_1
+428       6862
+414       6581
+786       4016
+410       3614
+486       3508
+427       2766
+491       2275
+715       2151
+682       2042
+434       2028
+780       2019
+996       1967
+276       1889
+38        1688
+250.8     1680
+599       1595
+584       1520
+V57       1207
+250.6     1183
+518       1115
+820       1082
+577       1057
+493       1056
+435       1016
+562        989
+574        965
+296        896
+560        876
+250.7      871
+250.13     851
+Name: count, dtype: int64
+
+======================================================================
+DIAGNOSIS COLUMN: diag_2
+======================================================================
+Data type: str
+Number of unique values: 749
+Missing values (NaN): 0
+Question-mark values: 358
+
+Top 30 values:
+diag_2
+276       6752
+428       6662
+250       6071
+427       5036
+401       3736
+496       3305
+599       3288
+403       2823
+414       2650
+411       2566
+250.02    2074
+707       1999
+585       1871
+584       1649
+491       1545
+250.01    1523
+285       1520
+780       1491
+425       1434
+682       1433
+486       1379
+518       1355
+424       1071
+413       1042
+250.6      895
+493        881
+305        702
+786        644
+280        606
+998        571
+Name: count, dtype: int64
+
+======================================================================
+DIAGNOSIS COLUMN: diag_3
+======================================================================
+Data type: str
+Number of unique values: 790
+Missing values (NaN): 0
+Question-mark values: 1423
+
+Top 30 values:
+diag_3
+250       11555
+401        8289
+276        5175
+428        4577
+427        3955
+414        3664
+496        2605
+403        2357
+585        1992
+272        1969
+599        1941
+?          1423
+V45        1389
+250.02     1369
+707        1360
+780        1334
+285        1200
+425        1136
+250.6      1080
+424        1063
+584         963
+305         924
+250.01      915
+682         887
+518         854
+41          727
+493         694
+278         680
+530         625
+786         584
+Name: count, dtype: int64
+
+======================================================================
+MEDICATION COLUMNS
+======================================================================
+metformin                      : FOUND
+repaglinide                    : FOUND
+nateglinide                    : FOUND
+chlorpropamide                 : FOUND
+glimepiride                    : FOUND
+acetohexamide                  : FOUND
+glipizide                      : FOUND
+glyburide                      : FOUND
+tolbutamide                    : FOUND
+pioglitazone                   : FOUND
+rosiglitazone                  : FOUND
+acarbose                       : FOUND
+miglitol                       : FOUND
+troglitazone                   : FOUND
+tolazamide                     : FOUND
+examide                        : FOUND
+citoglipton                    : FOUND
+insulin                        : FOUND
+glyburide-metformin            : FOUND
+glipizide-metformin            : FOUND
+glimepiride-pioglitazone       : FOUND
+metformin-rosiglitazone        : FOUND
+metformin-pioglitazone         : FOUND
+
+======================================================================
+MEDICATION: metformin
+======================================================================
+Number of unique values: 4
+
+Value counts:
+metformin
+No        81778
+Steady    18346
+Up         1067
+Down        575
+
+======================================================================
+MEDICATION: repaglinide
+======================================================================
+Number of unique values: 4
+
+Value counts:
+repaglinide
+No        100227
+Steady      1384
+Up           110
+Down          45
+
+======================================================================
+MEDICATION: nateglinide
+======================================================================
+Number of unique values: 4
+
+Value counts:
+nateglinide
+No        101063
+Steady       668
+Up            24
+Down          11
+
+======================================================================
+MEDICATION: chlorpropamide
+======================================================================
+Number of unique values: 4
+
+Value counts:
+chlorpropamide
+No        101680
+Steady        79
+Up             6
+Down           1
+
+======================================================================
+MEDICATION: glimepiride
+======================================================================
+Number of unique values: 4
+
+Value counts:
+glimepiride
+No        96575
+Steady     4670
+Up          327
+Down        194
+
+======================================================================
+MEDICATION: acetohexamide
+======================================================================
+Number of unique values: 2
+
+Value counts:
+acetohexamide
+No        101765
+Steady         1
+
+======================================================================
+MEDICATION: glipizide
+======================================================================
+Number of unique values: 4
+
+Value counts:
+glipizide
+No        89080
+Steady    11356
+Up          770
+Down        560
+
+======================================================================
+MEDICATION: glyburide
+======================================================================
+Number of unique values: 4
+
+Value counts:
+glyburide
+No        91116
+Steady     9274
+Up          812
+Down        564
+
+======================================================================
+MEDICATION: tolbutamide
+======================================================================
+Number of unique values: 2
+
+Value counts:
+tolbutamide
+No        101743
+Steady        23
+
+======================================================================
+MEDICATION: pioglitazone
+======================================================================
+Number of unique values: 4
+
+Value counts:
+pioglitazone
+No        94438
+Steady     6976
+Up          234
+Down        118
+
+======================================================================
+MEDICATION: rosiglitazone
+======================================================================
+Number of unique values: 4
+
+Value counts:
+rosiglitazone
+No        95401
+Steady     6100
+Up          178
+Down         87
+
+======================================================================
+MEDICATION: acarbose
+======================================================================
+Number of unique values: 4
+
+Value counts:
+acarbose
+No        101458
+Steady       295
+Up            10
+Down           3
+
+======================================================================
+MEDICATION: miglitol
+======================================================================
+Number of unique values: 4
+
+Value counts:
+miglitol
+No        101728
+Steady        31
+Down           5
+Up             2
+
+======================================================================
+MEDICATION: troglitazone
+======================================================================
+Number of unique values: 2
+
+Value counts:
+troglitazone
+No        101763
+Steady         3
+
+======================================================================
+MEDICATION: tolazamide
+======================================================================
+Number of unique values: 3
+
+Value counts:
+tolazamide
+No        101727
+Steady        38
+Up             1
+
+======================================================================
+MEDICATION: examide
+======================================================================
+Number of unique values: 1
+
+Value counts:
+examide
+No    101766
+
+======================================================================
+MEDICATION: citoglipton
+======================================================================
+Number of unique values: 1
+
+Value counts:
+citoglipton
+No    101766
+
+======================================================================
+MEDICATION: insulin
+======================================================================
+Number of unique values: 4
+
+Value counts:
+insulin
+No        47383
+Steady    30849
+Down      12218
+Up        11316
+
+======================================================================
+MEDICATION: glyburide-metformin
+======================================================================
+Number of unique values: 4
+
+Value counts:
+glyburide-metformin
+No        101060
+Steady       692
+Up             8
+Down           6
+
+======================================================================
+MEDICATION: glipizide-metformin
+======================================================================
+Number of unique values: 2
+
+Value counts:
+glipizide-metformin
+No        101753
+Steady        13
+
+======================================================================
+MEDICATION: glimepiride-pioglitazone
+======================================================================
+Number of unique values: 2
+
+Value counts:
+glimepiride-pioglitazone
+No        101765
+Steady         1
+
+======================================================================
+MEDICATION: metformin-rosiglitazone
+======================================================================
+Number of unique values: 2
+
+Value counts:
+metformin-rosiglitazone
+No        101764
+Steady         2
+
+======================================================================
+MEDICATION: metformin-pioglitazone
+======================================================================
+Number of unique values: 2
+
+Value counts:
+metformin-pioglitazone
+No        101765
+Steady         1
+
+======================================================================
+MEDICATION STRUCTURE SUMMARY
+======================================================================
+                          unique_values  missing_values  question_mark_values
+metformin                             4               0                     0
+repaglinide                           4               0                     0
+nateglinide                           4               0                     0
+chlorpropamide                        4               0                     0
+glimepiride                           4               0                     0
+acetohexamide                         2               0                     0
+glipizide                             4               0                     0
+glyburide                             4               0                     0
+tolbutamide                           2               0                     0
+pioglitazone                          4               0                     0
+rosiglitazone                         4               0                     0
+acarbose                              4               0                     0
+miglitol                              4               0                     0
+troglitazone                          2               0                     0
+tolazamide                            3               0                     0
+examide                               1               0                     0
+citoglipton                           1               0                     0
+insulin                               4               0                     0
+glyburide-metformin                   4               0                     0
+glipizide-metformin                   2               0                     0
+glimepiride-pioglitazone              2               0                     0
+metformin-rosiglitazone               2               0                     0
+metformin-pioglitazone                2               0                     0
+
+======================================================================
+NUM_MEDICATIONS
+======================================================================
+Mean: 16.02
+Median: 15.00
+Minimum: 1
+Maximum: 81
+
+Value counts:
+num_medications
+1      262
+2      470
+3      900
+4     1417
+5     2017
+6     2699
+7     3484
+8     4353
+9     4913
+10    5346
+11    5795
+12    6004
+13    6086
+14    5707
+15    5792
+16    5430
+17    4919
+18    4523
+19    4078
+20    3691
+21    3230
+22    2868
+23    2426
+24    2109
+25    1888
+26    1608
+27    1432
+28    1233
+29    1000
+30     849
+31     712
+32     623
+33     504
+34     453
+35     388
+36     287
+37     293
+38     228
+39     209
+40     179
+41     146
+42     128
+43     127
+44     100
+45      88
+46      92
+47      74
+48      60
+49      61
+50      55
+51      43
+52      54
+53      40
+54      33
+55      32
+56      37
+57      26
+58      25
+59      20
+60      23
+61      14
+62      15
+63      14
+64       8
+65      12
+66       5
+67       7
+68       7
+69       5
+70       2
+72       3
+74       1
+75       2
+79       1
+81       1
+
+======================================================================
+DIAGNOSIS & MEDICATION ANALYSIS COMPLETE
+======================================================================

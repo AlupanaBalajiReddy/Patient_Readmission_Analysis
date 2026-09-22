@@ -1,0 +1,228 @@
+STAGE 6E: READMISSION VS HOSPITAL STAY & CLINICAL ACTIVITY
+======================================================================
+
+Dataset shape: (101766, 49)
+
+Purpose:
+Compare hospital stay and clinical activity between encounters with and without early readmission (<30 days).
+
+Important interpretation note:
+These are descriptive encounter-level associations. They do not establish causality.
+
+======================================================================
+OVERALL CLINICAL ACTIVITY
+======================================================================
+
+time_in_hospital
+  Count   : 101766
+  Mean    : 4.40
+  Median  : 4.00
+  Q25     : 2.00
+  Q75     : 6.00
+  Minimum : 1
+  Maximum : 14
+
+num_lab_procedures
+  Count   : 101766
+  Mean    : 43.10
+  Median  : 44.00
+  Q25     : 31.00
+  Q75     : 57.00
+  Minimum : 1
+  Maximum : 132
+
+num_procedures
+  Count   : 101766
+  Mean    : 1.34
+  Median  : 1.00
+  Q25     : 0.00
+  Q75     : 2.00
+  Minimum : 0
+  Maximum : 6
+
+num_medications
+  Count   : 101766
+  Mean    : 16.02
+  Median  : 15.00
+  Q25     : 10.00
+  Q75     : 20.00
+  Minimum : 1
+  Maximum : 81
+
+number_diagnoses
+  Count   : 101766
+  Mean    : 7.42
+  Median  : 8.00
+  Q25     : 6.00
+  Q75     : 9.00
+  Minimum : 1
+  Maximum : 16
+
+======================================================================
+COMPARISON: EARLY VS NON-EARLY READMISSION
+======================================================================
+
+time_in_hospital
+  Non-early readmission
+    Count   : 90409
+    Mean    : 4.35
+    Median  : 4.00
+    Q25     : 2.00
+    Q75     : 6.00
+    Minimum : 1.0
+    Maximum : 14.0
+
+  Early readmission
+    Count   : 11357
+    Mean    : 4.77
+    Median  : 4.00
+    Q25     : 2.00
+    Q75     : 6.00
+    Minimum : 1.0
+    Maximum : 14.0
+
+num_lab_procedures
+  Non-early readmission
+    Count   : 90409
+    Mean    : 42.95
+    Median  : 44.00
+    Q25     : 31.00
+    Q75     : 57.00
+    Minimum : 1.0
+    Maximum : 129.0
+
+  Early readmission
+    Count   : 11357
+    Mean    : 44.23
+    Median  : 45.00
+    Q25     : 33.00
+    Q75     : 58.00
+    Minimum : 1.0
+    Maximum : 132.0
+
+num_procedures
+  Non-early readmission
+    Count   : 90409
+    Mean    : 1.35
+    Median  : 1.00
+    Q25     : 0.00
+    Q75     : 2.00
+    Minimum : 0.0
+    Maximum : 6.0
+
+  Early readmission
+    Count   : 11357
+    Mean    : 1.28
+    Median  : 1.00
+    Q25     : 0.00
+    Q75     : 2.00
+    Minimum : 0.0
+    Maximum : 6.0
+
+num_medications
+  Non-early readmission
+    Count   : 90409
+    Mean    : 15.91
+    Median  : 15.00
+    Q25     : 10.00
+    Q75     : 20.00
+    Minimum : 1.0
+    Maximum : 79.0
+
+  Early readmission
+    Count   : 11357
+    Mean    : 16.90
+    Median  : 16.00
+    Q25     : 11.00
+    Q75     : 21.00
+    Minimum : 1.0
+    Maximum : 81.0
+
+number_diagnoses
+  Non-early readmission
+    Count   : 90409
+    Mean    : 7.39
+    Median  : 8.00
+    Q25     : 6.00
+    Q75     : 9.00
+    Minimum : 1.0
+    Maximum : 16.0
+
+  Early readmission
+    Count   : 11357
+    Mean    : 7.69
+    Median  : 9.00
+    Q25     : 6.00
+    Q75     : 9.00
+    Minimum : 1.0
+    Maximum : 16.0
+
+======================================================================
+DIFFERENCE BETWEEN EARLY AND NON-EARLY GROUPS
+======================================================================
+
+time_in_hospital
+  Non-early mean : 4.35
+  Early mean     : 4.77
+  Mean difference: 0.42
+  Mean difference (%): 9.63%
+  Non-early median : 4.00
+  Early median     : 4.00
+  Median difference: 0.00
+
+num_lab_procedures
+  Non-early mean : 42.95
+  Early mean     : 44.23
+  Mean difference: 1.27
+  Mean difference (%): 2.96%
+  Non-early median : 44.00
+  Early median     : 45.00
+  Median difference: 1.00
+
+num_procedures
+  Non-early mean : 1.35
+  Early mean     : 1.28
+  Mean difference: -0.07
+  Mean difference (%): -4.92%
+  Non-early median : 1.00
+  Early median     : 1.00
+  Median difference: 0.00
+
+num_medications
+  Non-early mean : 15.91
+  Early mean     : 16.90
+  Mean difference: 0.99
+  Mean difference (%): 6.23%
+  Non-early median : 15.00
+  Early median     : 16.00
+  Median difference: 1.00
+
+number_diagnoses
+  Non-early mean : 7.39
+  Early mean     : 7.69
+  Mean difference: 0.30
+  Mean difference (%): 4.12%
+  Non-early median : 8.00
+  Early median     : 9.00
+  Median difference: 1.00
+
+======================================================================
+FIGURES CREATED
+======================================================================
+
+time_in_hospital: results/figures/early_readmission_by_time_in_hospital.png
+num_lab_procedures: results/figures/early_readmission_by_num_lab_procedures.png
+num_procedures: results/figures/early_readmission_by_num_procedures.png
+num_medications: results/figures/early_readmission_by_num_medications.png
+number_diagnoses: results/figures/early_readmission_by_number_diagnoses.png
+
+======================================================================
+INTERPRETATION FRAMEWORK
+======================================================================
+
+1. Compare means and medians rather than relying only on means because several clinical activity variables are skewed.
+
+2. A higher value in the early-readmission group indicates a higher observed level of that variable among encounters with early readmission.
+
+3. These comparisons describe associations in the dataset and should not be interpreted as causal effects.
+

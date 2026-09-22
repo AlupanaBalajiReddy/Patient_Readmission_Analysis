@@ -1,0 +1,73 @@
+STAGE 8: FINAL ANALYSIS DATASET QUALITY REPORT
+======================================================================
+Input file: data/processed/diabetic_data_decoded.csv
+Output file: data/processed/patient_readmission_analysis.csv
+
+Rows: 101,766
+Columns: 47
+
+Analysis-level duplicate rows: 1
+Duplicate interpretation: Allowed because encounter_id and patient_nbr were intentionally removed.
+Source-level encounter uniqueness was validated before creating this analysis dataset.
+
+Total NaN values: 0
+Target mismatches: 0
+
+Early-readmission distribution:
+  0: 90,409 (88.84%)
+  1: 11,357 (11.16%)
+
+Question-mark values remaining:
+  None
+
+Final analysis columns:
+  01. race
+  02. gender
+  03. age
+  04. time_in_hospital
+  05. payer_code
+  06. medical_specialty
+  07. num_lab_procedures
+  08. num_procedures
+  09. num_medications
+  10. number_outpatient
+  11. number_emergency
+  12. number_inpatient
+  13. number_diagnoses
+  14. metformin
+  15. repaglinide
+  16. nateglinide
+  17. chlorpropamide
+  18. glimepiride
+  19. acetohexamide
+  20. glipizide
+  21. glyburide
+  22. tolbutamide
+  23. pioglitazone
+  24. rosiglitazone
+  25. acarbose
+  26. miglitol
+  27. troglitazone
+  28. tolazamide
+  29. insulin
+  30. glyburide-metformin
+  31. glipizide-metformin
+  32. glimepiride-pioglitazone
+  33. metformin-rosiglitazone
+  34. metformin-pioglitazone
+  35. change
+  36. diabetesMed
+  37. readmitted
+  38. early_readmission
+  39. admission_type
+  40. discharge_disposition
+  41. admission_source
+  42. outpatient_visits_group
+  43. emergency_visits_group
+  44. inpatient_visits_group
+  45. primary_diagnosis_category
+  46. secondary_diagnosis_category
+  47. tertiary_diagnosis_category
+
+======================================================================
+FINAL QUALITY STATUS: PASS

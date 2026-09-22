@@ -1,0 +1,211 @@
+STAGE 7B: PRACTICAL SIGNIFICANCE ANALYSIS
+======================================================================
+
+Dataset shape: (101766, 49)
+Total encounters: 101,766
+Early readmissions: 11,357
+Overall early-readmission rate: 11.16%
+
+Purpose:
+Quantify the practical magnitude of observed differences in early-readmission rates.
+
+Important interpretation note:
+These results describe associations between encounter characteristics and early readmission. They do not establish causality.
+
+======================================================================
+UTILIZATION VARIABLES
+======================================================================
+
+Outpatient visits
+--------------------------------------------------
+outpatient_category  encounters  early_readmissions  early_readmission_rate  difference_from_overall_pp  relative_difference_percent
+                  0       85027                9076               10.674256                   -0.485659                    -4.351820
+                  1        8547                1190               13.923014                    2.763098                    24.759130
+                  2        3594                 494               13.745131                    2.585215                    23.165183
+                 3+        4598                 597               12.983906                    1.823990                    16.344121
+
+Emergency visits
+--------------------------------------------------
+emergency_category  encounters  early_readmissions  early_readmission_rate  difference_from_overall_pp  relative_difference_percent
+                 0       90383                9467               10.474315                   -0.685601                    -6.143425
+                 1        7677                1102               14.354566                    3.194650                    28.626109
+                 2        2042                 373               18.266405                    7.106490                    63.678702
+                3+        1664                 415               24.939904                   13.779988                   123.477525
+
+Inpatient visits
+--------------------------------------------------
+inpatient_category  encounters  early_readmissions  early_readmission_rate  difference_from_overall_pp  relative_difference_percent
+                 0       67630                5706                8.437084                   -2.722832                   -24.398318
+                 1       19521                2523               12.924543                    1.764627                    15.812188
+                 2        7566                1319               17.433254                    6.273338                    56.213131
+                3+        7049                1809               25.663215                   14.503299                   129.958854
+
+======================================================================
+KEY CATEGORICAL VARIABLES
+======================================================================
+
+Diabetes medication
+--------------------------------------------------
+diabetesMed  encounters  early_readmissions  early_readmission_rate  difference_from_overall_pp  relative_difference_percent
+         No       23403                2246                9.597060                   -1.562856                   -14.004189
+        Yes       78363                9111               11.626661                    0.466745                     4.182331
+
+
+Medication change
+--------------------------------------------------
+change  encounters  early_readmissions  early_readmission_rate  difference_from_overall_pp  relative_difference_percent
+    Ch       47011                5558               11.822765                    0.662849                     5.939552
+    No       54755                5799               10.590814                   -0.569102                    -5.099521
+
+
+Insulin
+--------------------------------------------------
+insulin  encounters  early_readmissions  early_readmission_rate  difference_from_overall_pp  relative_difference_percent
+   Down       12218                1698               13.897528                    2.737612                    24.530762
+     No       47383                4756               10.037355                   -1.122561                   -10.058864
+ Steady       30849                3433               11.128400                   -0.031516                    -0.282406
+     Up       11316                1470               12.990456                    1.830540                    16.402813
+
+
+Age
+--------------------------------------------------
+     age  encounters  early_readmissions  early_readmission_rate  difference_from_overall_pp  relative_difference_percent
+  [0-10)         161                   3                1.863354                   -9.296562                   -83.303153
+ [10-20)         691                  40                5.788712                   -5.371204                   -48.129430
+ [20-30)        1657                 236               14.242607                    3.082691                    27.622890
+ [30-40)        3775                 424               11.231788                    0.071872                     0.644021
+ [40-50)        9685                1027               10.604027                   -0.555889                    -4.981122
+ [50-60)       17256                1668                9.666203                   -1.493713                   -13.384624
+ [60-70)       22483                2502               11.128408                   -0.031508                    -0.282330
+ [70-80)       26068                3069               11.773055                    0.613139                     5.494120
+ [80-90)       17197                2078               12.083503                    0.923587                     8.275932
+[90-100)        2793                 310               11.099177                   -0.060739                    -0.544264
+
+
+Discharge disposition
+--------------------------------------------------
+                                                                                    discharge_disposition  encounters  early_readmissions  early_readmission_rate  difference_from_overall_pp  relative_difference_percent
+                                                                Admitted as an inpatient to this hospital          21                   9               42.857143                   31.697227                   284.027472
+                                                                                       Discharged to home       60234                5602                9.300395                   -1.859521                   -16.662498
+                                                                            Discharged/transferred to ICF         815                 104               12.760736                    1.600820                    14.344376
+                                                                            Discharged/transferred to SNF       13954                2046               14.662462                    3.502546                    31.385062
+                                                Discharged/transferred to a federal health care facility.           5                   0                0.000000                  -11.159916                  -100.000000
+                                                     Discharged/transferred to a long term care hospital.         412                  30                7.281553                   -3.878362                   -34.752614
+  Discharged/transferred to a nursing facility certified under Medicaid but not certified under Medicare.          48                   7               14.583333                    3.423417                    30.676015
+                        Discharged/transferred to another rehab fac including rehab units of a hospital .        1993                 552               27.696939                   16.537023                   148.182330
+                                                    Discharged/transferred to another short term hospital        2128                 342               16.071429                    4.911513                    44.010302
+                                     Discharged/transferred to another type of inpatient care institution        1184                 247               20.861486                    9.701571                    86.932291
+                                            Discharged/transferred to home under care of Home IV provider         108                  15               13.888889                    2.728973                    24.453347
+                                                  Discharged/transferred to home with home health service       12902                1638               12.695706                    1.535790                    13.761665
+                            Discharged/transferred within this institution to Medicare approved swing bed          63                  28               44.444444                   33.284529                   298.250712
+                              Discharged/transferred/referred another institution for outpatient services          11                   0                0.000000                  -11.159916                  -100.000000
+Discharged/transferred/referred to a psychiatric hospital of psychiatric distinct part unit of a hospital         139                  51               36.690647                   25.530732                   228.771721
+                              Discharged/transferred/referred to this institution for outpatient services          14                   0                0.000000                  -11.159916                  -100.000000
+                                                                                                  Expired        1642                   0                0.000000                  -11.159916                  -100.000000
+                                                                 Expired at home. Medicaid only, hospice.           8                   0                0.000000                  -11.159916                  -100.000000
+                                                   Expired in a medical facility. Medicaid only, hospice.           2                   0                0.000000                  -11.159916                  -100.000000
+                                                                                           Hospice / home         399                  19                4.761905                   -6.398011                   -57.330281
+                                                                               Hospice / medical facility         372                  24                6.451613                   -4.708303                   -42.189413
+                                                                                                 Left AMA         623                  90               14.446228                    3.286312                    29.447462
+                                                                                                     NULL        3691                 459               12.435654                    1.275738                    11.431434
+                                            Neonate discharged to another hospital for neonatal aftercare           6                   0                0.000000                  -11.159916                  -100.000000
+                                                                                               Not Mapped         989                  92                9.302326                   -1.857590                   -16.645200
+                                              Still patient or expected to return for outpatient services           3                   2               66.666667                   55.506751                   497.376068
+
+======================================================================
+PRACTICAL DIFFERENCE SUMMARY
+======================================================================
+
+Outpatient visits
+  Highest observed category: 1
+  Highest observed rate: 13.92% (n=8,547)
+  Lowest observed category: 0
+  Lowest observed rate: 10.67% (n=85,027)
+  Absolute difference: 3.25 percentage points
+
+Emergency visits
+  Highest observed category: 3+
+  Highest observed rate: 24.94% (n=1,664)
+  Lowest observed category: 0
+  Lowest observed rate: 10.47% (n=90,383)
+  Absolute difference: 14.47 percentage points
+
+Inpatient visits
+  Highest observed category: 3+
+  Highest observed rate: 25.66% (n=7,049)
+  Lowest observed category: 0
+  Lowest observed rate: 8.44% (n=67,630)
+  Absolute difference: 17.23 percentage points
+
+Diabetes medication
+  Highest observed category: Yes
+  Highest observed rate: 11.63% (n=78,363)
+  Lowest observed category: No
+  Lowest observed rate: 9.60% (n=23,403)
+  Absolute difference: 2.03 percentage points
+
+Medication change
+  Highest observed category: Ch
+  Highest observed rate: 11.82% (n=47,011)
+  Lowest observed category: No
+  Lowest observed rate: 10.59% (n=54,755)
+  Absolute difference: 1.23 percentage points
+
+Insulin
+  Highest observed category: Down
+  Highest observed rate: 13.90% (n=12,218)
+  Lowest observed category: No
+  Lowest observed rate: 10.04% (n=47,383)
+  Absolute difference: 3.86 percentage points
+
+Age
+  Highest observed category: [20-30)
+  Highest observed rate: 14.24% (n=1,657)
+  Lowest observed category: [0-10)
+  Lowest observed rate: 1.86% (n=161)
+  Absolute difference: 12.38 percentage points
+
+Discharge disposition
+  Highest observed category: Discharged/transferred/referred to a psychiatric hospital of psychiatric distinct part unit of a hospital
+  Highest observed rate: 36.69% (n=139)
+  Lowest observed category: Expired
+  Lowest observed rate: 0.00% (n=1,642)
+  Absolute difference: 36.69 percentage points
+
+======================================================================
+KEY COMPARISONS
+======================================================================
+
+Inpatient visits: 0 vs 3+
+  Lower group rate: 8.44%
+  Higher group rate: 25.66%
+  Absolute difference: 17.23 percentage points
+  Relative difference: 204.2%
+
+Emergency visits: 0 vs 3+
+  Lower group rate: 10.47%
+  Higher group rate: 24.94%
+  Absolute difference: 14.47 percentage points
+  Relative difference: 138.1%
+
+Outpatient visits: 0 vs 1+
+  Lower group rate: 10.67%
+  Higher group rate: 13.63%
+  Absolute difference: 2.95 percentage points
+  Relative difference: 27.7%
+
+======================================================================
+INTERPRETATION GUIDANCE
+======================================================================
+
+Absolute percentage-point difference:
+Difference between two observed early-readmission rates.
+
+Relative difference:
+Percentage increase or decrease relative to the reference group's observed rate.
+
+Practical significance:
+A statistically significant association may still have a small practical difference. Therefore, readmission rates and effect sizes should be considered together with p-values.
+
+Caution:
+These are encounter-level descriptive associations. They should not be interpreted as causal effects or individual patient risk estimates.
