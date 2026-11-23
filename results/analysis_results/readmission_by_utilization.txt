@@ -1,0 +1,58 @@
+STAGE 6D: READMISSION BY HOSPITAL UTILIZATION
+======================================================================
+
+Total encounters: 101,766
+Overall early readmission rate: 11.16%
+
+UTILIZATION DESCRIPTIVE STATISTICS
+--------------------------------------------------
+                       mean median 75th_percentile 90th_percentile maximum zero_count zero_percentage
+number_outpatient  0.369357    0.0             0.0             1.0      42      85027       83.551481
+number_emergency   0.197836    0.0             0.0             1.0      76      90383       88.814535
+number_inpatient   0.635566    0.0             1.0             2.0      21      67630        66.45638
+
+UTILIZATION BY EARLY READMISSION STATUS
+--------------------------------------------------
+                  number_outpatient                      number_emergency                      number_inpatient                     
+                              count  mean median min max            count  mean median min max            count  mean median min max
+early_readmission                                                                                                                   
+0                             90409  0.36    0.0   0  42            90409  0.18    0.0   0  76            90409  0.56    0.0   0  19
+1                             11357  0.44    0.0   0  40            11357  0.36    0.0   0  64            11357  1.22    0.0   0  21
+
+ZERO UTILIZATION BY EARLY READMISSION STATUS
+--------------------------------------------------
+                   number_outpatient  number_emergency  number_inpatient
+early_readmission                                                       
+0                              84.01             89.50             68.49
+1                              79.92             83.36             50.24
+
+
+======================================================================
+NUMBER_OUTPATIENT — EARLY READMISSION RATE
+======================================================================
+                            total_encounters  early_readmissions  early_readmission_rate
+number_outpatient_category                                                              
+0                                      85027                9076                   10.67
+1                                       8547                1190                   13.92
+2                                       3594                 494                   13.75
+3+                                      4598                 597                   12.98
+
+======================================================================
+NUMBER_EMERGENCY — EARLY READMISSION RATE
+======================================================================
+                           total_encounters  early_readmissions  early_readmission_rate
+number_emergency_category                                                              
+0                                     90383                9467                   10.47
+1                                      7677                1102                   14.35
+2                                      2042                 373                   18.27
+3+                                     1664                 415                   24.94
+
+======================================================================
+NUMBER_INPATIENT — EARLY READMISSION RATE
+======================================================================
+                           total_encounters  early_readmissions  early_readmission_rate
+number_inpatient_category                                                              
+0                                     67630                5706                    8.44
+1                                     19521                2523                   12.92
+2                                      7566                1319                   17.43
+3+                                     7049                1809                   25.66

@@ -1,0 +1,22 @@
+STAGE 6A: OVERALL READMISSION PROFILE
+======================================================================
+
+Total encounters: 101,766
+Early readmission encounters: 11,357
+Non-early-readmission encounters: 90,409
+Early readmission rate: 11.16%
+
+Original readmission distribution
+--------------------------------------------------
+                      count  percentage
+readmission_category                   
+NO                    54864       53.91
+>30                   35545       34.93
+<30                   11357       11.16
+
+Early readmission distribution
+--------------------------------------------------
+                   count  percentage
+early_readmission                   
+0                  90409       88.84
+1                  11357       11.16

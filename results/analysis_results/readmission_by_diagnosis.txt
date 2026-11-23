@@ -1,0 +1,253 @@
+STAGE 6H: READMISSION BY DIAGNOSIS CATEGORIES
+======================================================================
+
+Dataset shape: (101766, 52)
+Overall early-readmission rate: 11.16%
+
+Important interpretation note:
+ICD-9 diagnosis codes are categorical codes, not continuous numerical measurements. They were grouped into broad ICD-9 categories for analysis.
+
+These are descriptive encounter-level associations. They do not establish causality.
+
+======================================================================
+DIAGNOSIS CATEGORY COUNTS
+======================================================================
+
+diag_1:
+diag_1_category
+Circulatory                             30336
+Endocrine / Metabolic                   11459
+Respiratory                             10407
+Digestive                                9208
+Symptoms / Signs / Abnormal Findings     7636
+Injury / Poisoning                       6974
+Genitourinary                            5078
+Musculoskeletal                          4957
+Neoplasms                                3433
+Infectious / Parasitic                   2768
+Skin / Subcutaneous Tissue               2530
+Mental Disorders                         2262
+Supplementary / External Factors         1644
+Blood / Blood-forming Organs             1103
+Nervous System                            947
+Pregnancy / Childbirth                    687
+Sense Organs                              264
+Congenital Conditions                      51
+Unknown                                    21
+Injury / External Causes                    1
+
+diag_2:
+diag_2_category
+Circulatory                             31365
+Endocrine / Metabolic                   21017
+Respiratory                             10251
+Genitourinary                            7987
+Symptoms / Signs / Abnormal Findings     4632
+Digestive                                3962
+Skin / Subcutaneous Tissue               3596
+Blood / Blood-forming Organs             2926
+Mental Disorders                         2657
+Neoplasms                                2547
+Injury / Poisoning                       2428
+Infectious / Parasitic                   1931
+Supplementary / External Factors         1805
+Musculoskeletal                          1764
+Nervous System                           1126
+Injury / External Causes                  731
+Pregnancy / Childbirth                    415
+Unknown                                   358
+Sense Organs                              160
+Congenital Conditions                     108
+
+diag_3:
+diag_3_category
+Circulatory                             29918
+Endocrine / Metabolic                   26308
+Respiratory                              6774
+Genitourinary                            6327
+Symptoms / Signs / Abnormal Findings     4523
+Supplementary / External Factors         3814
+Digestive                                3572
+Mental Disorders                         3136
+Blood / Blood-forming Organs             2490
+Skin / Subcutaneous Tissue               2488
+Injury / Poisoning                       1946
+Musculoskeletal                          1915
+Infectious / Parasitic                   1861
+Neoplasms                                1856
+Nervous System                           1503
+Unknown                                  1423
+Injury / External Causes                 1244
+Pregnancy / Childbirth                    309
+Sense Organs                              263
+Congenital Conditions                      96
+
+
+======================================================================
+READMISSION BY PRIMARY DIAGNOSIS CATEGORY
+======================================================================
+
+                     diag_1_category  encounters  early_readmissions early_readmission_rate difference_from_overall_pp
+                             Unknown          21                   5                  23.81                      12.65
+    Supplementary / External Factors        1644                 266                  16.18                       5.02
+        Blood / Blood-forming Organs        1103                 148                  13.42                       2.26
+               Endocrine / Metabolic       11459                1465                  12.78                       1.62
+                  Injury / Poisoning        6974                 854                  12.25                       1.09
+                    Mental Disorders        2262                 276                  12.20                       1.04
+                      Nervous System         947                 114                  12.04                       0.88
+              Infectious / Parasitic        2768                 317                  11.45                       0.29
+                         Circulatory       30336                3474                  11.45                       0.29
+                       Genitourinary        5078                 549                  10.81                      -0.35
+                         Respiratory       10407                1112                  10.69                      -0.47
+                           Digestive        9208                 966                  10.49                      -0.67
+                           Neoplasms        3433                 346                  10.08                      -1.08
+          Skin / Subcutaneous Tissue        2530                 250                   9.88                      -1.28
+                     Musculoskeletal        4957                 471                   9.50                      -1.66
+Symptoms / Signs / Abnormal Findings        7636                 687                   9.00                      -2.16
+               Congenital Conditions          51                   4                   7.84                      -3.32
+              Pregnancy / Childbirth         687                  42                   6.11                      -5.05
+                        Sense Organs         264                  11                   4.17                      -6.99
+            Injury / External Causes           1                   0                   0.00                     -11.16
+
+Categories with fewer than 100 encounters:
+         diag_1_category  encounters  early_readmissions early_readmission_rate difference_from_overall_pp
+                 Unknown          21                   5                  23.81                      12.65
+   Congenital Conditions          51                   4                   7.84                      -3.32
+Injury / External Causes           1                   0                   0.00                     -11.16
+
+Major categories with at least 1,000 encounters:
+                     diag_1_category  encounters  early_readmissions early_readmission_rate difference_from_overall_pp
+    Supplementary / External Factors        1644                 266                  16.18                       5.02
+        Blood / Blood-forming Organs        1103                 148                  13.42                       2.26
+               Endocrine / Metabolic       11459                1465                  12.78                       1.62
+                  Injury / Poisoning        6974                 854                  12.25                       1.09
+                    Mental Disorders        2262                 276                  12.20                       1.04
+              Infectious / Parasitic        2768                 317                  11.45                       0.29
+                         Circulatory       30336                3474                  11.45                       0.29
+                       Genitourinary        5078                 549                  10.81                      -0.35
+                         Respiratory       10407                1112                  10.69                      -0.47
+                           Digestive        9208                 966                  10.49                      -0.67
+                           Neoplasms        3433                 346                  10.08                      -1.08
+          Skin / Subcutaneous Tissue        2530                 250                   9.88                      -1.28
+                     Musculoskeletal        4957                 471                   9.50                      -1.66
+Symptoms / Signs / Abnormal Findings        7636                 687                   9.00                      -2.16
+
+======================================================================
+READMISSION BY SECONDARY DIAGNOSIS CATEGORY
+======================================================================
+
+                     diag_2_category  encounters  early_readmissions early_readmission_rate difference_from_overall_pp
+                           Neoplasms        2547                 380                  14.92                       3.76
+                      Nervous System        1126                 154                  13.68                       2.52
+          Skin / Subcutaneous Tissue        3596                 491                  13.65                       2.49
+            Injury / External Causes         731                  99                  13.54                       2.38
+              Infectious / Parasitic        1931                 232                  12.01                       0.85
+                       Genitourinary        7987                 947                  11.86                       0.70
+                           Digestive        3962                 459                  11.59                       0.43
+                  Injury / Poisoning        2428                 278                  11.45                       0.29
+                         Circulatory       31365                3462                  11.04                      -0.12
+                    Mental Disorders        2657                 289                  10.88                      -0.28
+               Endocrine / Metabolic       21017                2275                  10.82                      -0.34
+                         Respiratory       10251                1098                  10.71                      -0.45
+Symptoms / Signs / Abnormal Findings        4632                 491                  10.60                      -0.56
+    Supplementary / External Factors        1805                 182                  10.08                      -1.08
+                     Musculoskeletal        1764                 177                  10.03                      -1.13
+        Blood / Blood-forming Organs        2926                 281                   9.60                      -1.56
+               Congenital Conditions         108                   9                   8.33                      -2.83
+                             Unknown         358                  29                   8.10                      -3.06
+                        Sense Organs         160                   7                   4.38                      -6.78
+              Pregnancy / Childbirth         415                  17                   4.10                      -7.06
+
+Categories with fewer than 100 encounters:
+  None
+
+Major categories with at least 1,000 encounters:
+                     diag_2_category  encounters  early_readmissions early_readmission_rate difference_from_overall_pp
+                           Neoplasms        2547                 380                  14.92                       3.76
+                      Nervous System        1126                 154                  13.68                       2.52
+          Skin / Subcutaneous Tissue        3596                 491                  13.65                       2.49
+              Infectious / Parasitic        1931                 232                  12.01                       0.85
+                       Genitourinary        7987                 947                  11.86                       0.70
+                           Digestive        3962                 459                  11.59                       0.43
+                  Injury / Poisoning        2428                 278                  11.45                       0.29
+                         Circulatory       31365                3462                  11.04                      -0.12
+                    Mental Disorders        2657                 289                  10.88                      -0.28
+               Endocrine / Metabolic       21017                2275                  10.82                      -0.34
+                         Respiratory       10251                1098                  10.71                      -0.45
+Symptoms / Signs / Abnormal Findings        4632                 491                  10.60                      -0.56
+    Supplementary / External Factors        1805                 182                  10.08                      -1.08
+                     Musculoskeletal        1764                 177                  10.03                      -1.13
+        Blood / Blood-forming Organs        2926                 281                   9.60                      -1.56
+
+======================================================================
+READMISSION BY TERTIARY DIAGNOSIS CATEGORY
+======================================================================
+
+                     diag_3_category  encounters  early_readmissions early_readmission_rate difference_from_overall_pp
+                           Neoplasms        1856                 264                  14.22                       3.06
+          Skin / Subcutaneous Tissue        2488                 340                  13.67                       2.51
+                       Genitourinary        6327                 860                  13.59                       2.43
+                      Nervous System        1503                 190                  12.64                       1.48
+                           Digestive        3572                 439                  12.29                       1.13
+Symptoms / Signs / Abnormal Findings        4523                 553                  12.23                       1.07
+                         Respiratory        6774                 827                  12.21                       1.05
+                  Injury / Poisoning        1946                 225                  11.56                       0.40
+        Blood / Blood-forming Organs        2490                 286                  11.49                       0.33
+                    Mental Disorders        3136                 357                  11.38                       0.22
+              Infectious / Parasitic        1861                 208                  11.18                       0.02
+            Injury / External Causes        1244                 139                  11.17                       0.01
+                         Circulatory       29918                3203                  10.71                      -0.45
+                     Musculoskeletal        1915                 204                  10.65                      -0.51
+               Endocrine / Metabolic       26308                2749                  10.45                      -0.71
+    Supplementary / External Factors        3814                 381                   9.99                      -1.17
+               Congenital Conditions          96                   9                   9.38                      -1.78
+                        Sense Organs         263                  21                   7.98                      -3.18
+                             Unknown        1423                  91                   6.39                      -4.76
+              Pregnancy / Childbirth         309                  11                   3.56                      -7.60
+
+Categories with fewer than 100 encounters:
+      diag_3_category  encounters  early_readmissions early_readmission_rate difference_from_overall_pp
+Congenital Conditions          96                   9                   9.38                      -1.78
+
+Major categories with at least 1,000 encounters:
+                     diag_3_category  encounters  early_readmissions early_readmission_rate difference_from_overall_pp
+                           Neoplasms        1856                 264                  14.22                       3.06
+          Skin / Subcutaneous Tissue        2488                 340                  13.67                       2.51
+                       Genitourinary        6327                 860                  13.59                       2.43
+                      Nervous System        1503                 190                  12.64                       1.48
+                           Digestive        3572                 439                  12.29                       1.13
+Symptoms / Signs / Abnormal Findings        4523                 553                  12.23                       1.07
+                         Respiratory        6774                 827                  12.21                       1.05
+                  Injury / Poisoning        1946                 225                  11.56                       0.40
+        Blood / Blood-forming Organs        2490                 286                  11.49                       0.33
+                    Mental Disorders        3136                 357                  11.38                       0.22
+              Infectious / Parasitic        1861                 208                  11.18                       0.02
+            Injury / External Causes        1244                 139                  11.17                       0.01
+                         Circulatory       29918                3203                  10.71                      -0.45
+                     Musculoskeletal        1915                 204                  10.65                      -0.51
+               Endocrine / Metabolic       26308                2749                  10.45                      -0.71
+    Supplementary / External Factors        3814                 381                   9.99                      -1.17
+                             Unknown        1423                  91                   6.39                      -4.76
+
+======================================================================
+FIGURES CREATED
+======================================================================
+
+results/figures/early_readmission_by_primary_diagnosis_category.png
+results/figures/early_readmission_by_secondary_diagnosis_category.png
+results/figures/early_readmission_by_tertiary_diagnosis_category.png
+
+======================================================================
+INTERPRETATION FRAMEWORK
+======================================================================
+
+1. Diagnosis codes were analyzed as categorical ICD-9 codes rather than numerical measurements.
+
+2. Broad ICD-9 categories were used to reduce the number of individual diagnosis codes and improve interpretability.
+
+3. Categories with very small encounter counts should not be interpreted strongly.
+
+4. Major categories with at least 1,000 encounters provide a more stable descriptive comparison.
+
+5. Differences in readmission rates are descriptive associations and should not be interpreted as causal effects.
+

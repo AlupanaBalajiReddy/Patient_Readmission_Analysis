@@ -1,0 +1,255 @@
+
+============================================================
+1. DATASET DIMENSIONS
+============================================================
+Number of rows    : 101766
+Number of columns : 50
+
+============================================================
+2. FIRST 5 ROWS
+============================================================
+   encounter_id  patient_nbr             race  ... change diabetesMed readmitted
+0       2278392      8222157        Caucasian  ...     No          No         NO
+1        149190     55629189        Caucasian  ...     Ch         Yes        >30
+2         64410     86047875  AfricanAmerican  ...     No         Yes         NO
+3        500364     82442376        Caucasian  ...     Ch         Yes         NO
+4         16680     42519267        Caucasian  ...     Ch         Yes         NO
+
+[5 rows x 50 columns]
+
+============================================================
+3. COLUMN NAMES
+============================================================
+ 1. encounter_id
+ 2. patient_nbr
+ 3. race
+ 4. gender
+ 5. age
+ 6. weight
+ 7. admission_type_id
+ 8. discharge_disposition_id
+ 9. admission_source_id
+10. time_in_hospital
+11. payer_code
+12. medical_specialty
+13. num_lab_procedures
+14. num_procedures
+15. num_medications
+16. number_outpatient
+17. number_emergency
+18. number_inpatient
+19. diag_1
+20. diag_2
+21. diag_3
+22. number_diagnoses
+23. max_glu_serum
+24. A1Cresult
+25. metformin
+26. repaglinide
+27. nateglinide
+28. chlorpropamide
+29. glimepiride
+30. acetohexamide
+31. glipizide
+32. glyburide
+33. tolbutamide
+34. pioglitazone
+35. rosiglitazone
+36. acarbose
+37. miglitol
+38. troglitazone
+39. tolazamide
+40. examide
+41. citoglipton
+42. insulin
+43. glyburide-metformin
+44. glipizide-metformin
+45. glimepiride-pioglitazone
+46. metformin-rosiglitazone
+47. metformin-pioglitazone
+48. change
+49. diabetesMed
+50. readmitted
+
+============================================================
+4. DATA TYPES
+============================================================
+encounter_id                int64
+patient_nbr                 int64
+race                          str
+gender                        str
+age                           str
+weight                        str
+admission_type_id           int64
+discharge_disposition_id    int64
+admission_source_id         int64
+time_in_hospital            int64
+payer_code                    str
+medical_specialty             str
+num_lab_procedures          int64
+num_procedures              int64
+num_medications             int64
+number_outpatient           int64
+number_emergency            int64
+number_inpatient            int64
+diag_1                        str
+diag_2                        str
+diag_3                        str
+number_diagnoses            int64
+max_glu_serum                 str
+A1Cresult                     str
+metformin                     str
+repaglinide                   str
+nateglinide                   str
+chlorpropamide                str
+glimepiride                   str
+acetohexamide                 str
+glipizide                     str
+glyburide                     str
+tolbutamide                   str
+pioglitazone                  str
+rosiglitazone                 str
+acarbose                      str
+miglitol                      str
+troglitazone                  str
+tolazamide                    str
+examide                       str
+citoglipton                   str
+insulin                       str
+glyburide-metformin           str
+glipizide-metformin           str
+glimepiride-pioglitazone      str
+metformin-rosiglitazone       str
+metformin-pioglitazone        str
+change                        str
+diabetesMed                   str
+readmitted                    str
+dtype: object
+
+============================================================
+5. DATASET INFORMATION
+============================================================
+<class 'pandas.DataFrame'>
+RangeIndex: 101766 entries, 0 to 101765
+Data columns (total 50 columns):
+ #   Column                    Non-Null Count   Dtype
+---  ------                    --------------   -----
+ 0   encounter_id              101766 non-null  int64
+ 1   patient_nbr               101766 non-null  int64
+ 2   race                      101766 non-null  str  
+ 3   gender                    101766 non-null  str  
+ 4   age                       101766 non-null  str  
+ 5   weight                    101766 non-null  str  
+ 6   admission_type_id         101766 non-null  int64
+ 7   discharge_disposition_id  101766 non-null  int64
+ 8   admission_source_id       101766 non-null  int64
+ 9   time_in_hospital          101766 non-null  int64
+ 10  payer_code                101766 non-null  str  
+ 11  medical_specialty         101766 non-null  str  
+ 12  num_lab_procedures        101766 non-null  int64
+ 13  num_procedures            101766 non-null  int64
+ 14  num_medications           101766 non-null  int64
+ 15  number_outpatient         101766 non-null  int64
+ 16  number_emergency          101766 non-null  int64
+ 17  number_inpatient          101766 non-null  int64
+ 18  diag_1                    101766 non-null  str  
+ 19  diag_2                    101766 non-null  str  
+ 20  diag_3                    101766 non-null  str  
+ 21  number_diagnoses          101766 non-null  int64
+ 22  max_glu_serum             5346 non-null    str  
+ 23  A1Cresult                 17018 non-null   str  
+ 24  metformin                 101766 non-null  str  
+ 25  repaglinide               101766 non-null  str  
+ 26  nateglinide               101766 non-null  str  
+ 27  chlorpropamide            101766 non-null  str  
+ 28  glimepiride               101766 non-null  str  
+ 29  acetohexamide             101766 non-null  str  
+ 30  glipizide                 101766 non-null  str  
+ 31  glyburide                 101766 non-null  str  
+ 32  tolbutamide               101766 non-null  str  
+ 33  pioglitazone              101766 non-null  str  
+ 34  rosiglitazone             101766 non-null  str  
+ 35  acarbose                  101766 non-null  str  
+ 36  miglitol                  101766 non-null  str  
+ 37  troglitazone              101766 non-null  str  
+ 38  tolazamide                101766 non-null  str  
+ 39  examide                   101766 non-null  str  
+ 40  citoglipton               101766 non-null  str  
+ 41  insulin                   101766 non-null  str  
+ 42  glyburide-metformin       101766 non-null  str  
+ 43  glipizide-metformin       101766 non-null  str  
+ 44  glimepiride-pioglitazone  101766 non-null  str  
+ 45  metformin-rosiglitazone   101766 non-null  str  
+ 46  metformin-pioglitazone    101766 non-null  str  
+ 47  change                    101766 non-null  str  
+ 48  diabetesMed               101766 non-null  str  
+ 49  readmitted                101766 non-null  str  
+dtypes: int64(13), str(37)
+memory usage: 38.8 MB
+
+============================================================
+6. UNIQUE IDENTIFIERS
+============================================================
+Unique encounter IDs : 101766
+Unique patient IDs   : 71518
+
+============================================================
+7. DUPLICATE CHECK
+============================================================
+Duplicate rows : 0
+
+============================================================
+8. '?' VALUES
+============================================================
+weight               98569
+medical_specialty    49949
+payer_code           40256
+race                  2273
+diag_3                1423
+diag_2                 358
+diag_1                  21
+dtype: int64
+
+============================================================
+9. NaN / NULL VALUES
+============================================================
+max_glu_serum    96420
+A1Cresult        84748
+dtype: int64
+
+============================================================
+10. READMISSION CATEGORIES
+============================================================
+readmitted
+NO     54864
+>30    35545
+<30    11357
+Name: count, dtype: int64
+
+Readmission percentages:
+readmitted
+NO     53.91
+>30    34.93
+<30    11.16
+Name: proportion, dtype: float64
+
+============================================================
+11. NUMERICAL SUMMARY
+============================================================
+       encounter_id   patient_nbr  ...  number_inpatient  number_diagnoses
+count  1.017660e+05  1.017660e+05  ...     101766.000000     101766.000000
+mean   1.652016e+08  5.433040e+07  ...          0.635566          7.422607
+std    1.026403e+08  3.869636e+07  ...          1.262863          1.933600
+min    1.252200e+04  1.350000e+02  ...          0.000000          1.000000
+25%    8.496119e+07  2.341322e+07  ...          0.000000          6.000000
+50%    1.523890e+08  4.550514e+07  ...          0.000000          8.000000
+75%    2.302709e+08  8.754595e+07  ...          1.000000          9.000000
+max    4.438672e+08  1.895026e+08  ...         21.000000         16.000000
+
+[8 rows x 13 columns]
+
+============================================================
+DATA UNDERSTANDING COMPLETE
+============================================================
+The raw dataset has been loaded successfully.
+No changes have been made to the original dataset.

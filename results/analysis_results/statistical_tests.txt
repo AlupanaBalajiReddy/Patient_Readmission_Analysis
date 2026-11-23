@@ -1,0 +1,232 @@
+STAGE 7A: STATISTICAL TESTING OF EARLY READMISSION ASSOCIATIONS
+======================================================================
+
+Dataset shape: (101766, 49)
+Non-early readmission encounters: 90409
+Early readmission encounters: 11357
+Early readmission rate: 11.16%
+
+Purpose:
+Evaluate whether selected descriptive differences between early-readmission and non-early-readmission encounters are statistically supported.
+
+Important interpretation note:
+Statistical significance does not imply causality or practical importance.
+
+Rare-category handling:
+Categories with fewer than 100 observations were grouped into "Other / Small Category" before Chi-square testing.
+
+======================================================================
+CHI-SQUARE TESTS: CATEGORICAL VARIABLES
+======================================================================
+
+Variable: age
+  Categories before grouping: 10
+  Categories after grouping: 10
+  Small categories grouped: 0
+  Chi-square: 116.608911
+  Degrees of freedom: 9
+  P-value: 6.59792281e-21
+  Adjusted P-value: 1.979376843e-20
+  Cramer's V: 0.033850
+  Minimum expected count: 17.9675
+  Expected cells below 5: 0/20
+
+Variable: gender
+  Categories before grouping: 3
+  Categories after grouping: 3
+  Small categories grouped: 1
+  Chi-square: 1.237255
+  Degrees of freedom: 2
+  P-value: 0.5386832905
+  Adjusted P-value: 0.5386832905
+  Cramer's V: 0.003487
+  Minimum expected count: 0.3348
+  Expected cells below 5: 2/6
+
+Variable: race
+  Categories before grouping: 6
+  Categories after grouping: 6
+  Small categories grouped: 0
+  Chi-square: 25.908488
+  Degrees of freedom: 5
+  P-value: 9.295747546e-05
+  Adjusted P-value: 0.0001195167542
+  Cramer's V: 0.015956
+  Minimum expected count: 71.5351
+  Expected cells below 5: 0/12
+
+Variable: admission_type
+  Categories before grouping: 8
+  Categories after grouping: 7
+  Small categories grouped: 2
+  Chi-square: 25.973802
+  Degrees of freedom: 6
+  P-value: 0.0002251582712
+  Adjusted P-value: 0.0002533030551
+  Cramer's V: 0.015976
+  Minimum expected count: 3.4596
+  Expected cells below 5: 1/14
+
+Variable: discharge_disposition
+  Categories before grouping: 26
+  Categories after grouping: 17
+  Small categories grouped: 10
+  Chi-square: 1512.331117
+  Degrees of freedom: 16
+  P-value: 0
+  Adjusted P-value: 0
+  Cramer's V: 0.121905
+  Minimum expected count: 12.0527
+  Expected cells below 5: 0/34
+
+Variable: admission_source
+  Categories before grouping: 17
+  Categories after grouping: 11
+  Small categories grouped: 7
+  Chi-square: 50.600937
+  Degrees of freedom: 10
+  P-value: 2.068888423e-07
+  Adjusted P-value: 3.103332635e-07
+  Cramer's V: 0.022299
+  Minimum expected count: 4.7988
+  Expected cells below 5: 1/22
+
+Variable: diabetesMed
+  Categories before grouping: 2
+  Categories after grouping: 2
+  Small categories grouped: 0
+  Chi-square: 74.669432
+  Degrees of freedom: 1
+  P-value: 5.565116089e-18
+  Adjusted P-value: 1.25215112e-17
+  Cramer's V: 0.027088
+  Minimum expected count: 2611.7551
+  Expected cells below 5: 0/4
+
+Variable: change
+  Categories before grouping: 2
+  Categories after grouping: 2
+  Small categories grouped: 0
+  Chi-square: 38.596055
+  Degrees of freedom: 1
+  P-value: 5.212417406e-10
+  Adjusted P-value: 9.382351331e-10
+  Cramer's V: 0.019475
+  Minimum expected count: 5246.3881
+  Expected cells below 5: 0/4
+
+Variable: insulin
+  Categories before grouping: 4
+  Categories after grouping: 4
+  Small categories grouped: 0
+  Chi-square: 190.858814
+  Degrees of freedom: 3
+  P-value: 3.98188907e-41
+  Adjusted P-value: 1.791850082e-40
+  Cramer's V: 0.043307
+  Minimum expected count: 1262.8561
+  Expected cells below 5: 0/8
+
+======================================================================
+MANN-WHITNEY U TESTS: NUMERICAL/COUNT VARIABLES
+======================================================================
+
+Variable: time_in_hospital
+  U statistic: 560893881.000000
+  P-value: 2.689648414e-59
+  Adjusted P-value: 7.172395771e-59
+  Rank-biserial correlation: 0.092535
+  Non-early mean: 4.3492
+  Early mean: 4.7682
+  Non-early median: 4.0000
+  Early median: 4.0000
+
+Variable: num_lab_procedures
+  U statistic: 532742705.000000
+  P-value: 5.376925281e-11
+  Adjusted P-value: 6.145057464e-11
+  Rank-biserial correlation: 0.037701
+  Non-early mean: 42.9536
+  Early mean: 44.2260
+  Non-early median: 44.0000
+  Early median: 45.0000
+
+Variable: num_procedures
+  U statistic: 507951656.000000
+  P-value: 0.0511527306
+  Adjusted P-value: 0.0511527306
+  Rank-biserial correlation: -0.010588
+  Non-early mean: 1.3471
+  Early mean: 1.2809
+  Non-early median: 1.0000
+  Early median: 1.0000
+
+Variable: num_medications
+  U statistic: 556105435.500000
+  P-value: 1.394204631e-47
+  Adjusted P-value: 2.230727409e-47
+  Rank-biserial correlation: 0.083208
+  Non-early mean: 15.9111
+  Early mean: 16.9031
+  Non-early median: 15.0000
+  Early median: 16.0000
+
+Variable: number_outpatient
+  U statistic: 534135506.500000
+  P-value: 1.1514062e-27
+  Adjusted P-value: 1.535208267e-27
+  Rank-biserial correlation: 0.040414
+  Non-early mean: 0.3609
+  Early mean: 0.4369
+  Non-early median: 0.0000
+  Early median: 0.0000
+
+Variable: number_emergency
+  U statistic: 546040916.500000
+  P-value: 4.613076191e-91
+  Adjusted P-value: 1.845230477e-90
+  Rank-biserial correlation: 0.063604
+  Non-early mean: 0.1778
+  Early mean: 0.3573
+  Non-early median: 0.0000
+  Early median: 0.0000
+
+Variable: number_inpatient
+  U statistic: 622296617.000000
+  P-value: 0
+  Adjusted P-value: 0
+  Rank-biserial correlation: 0.212138
+  Non-early mean: 0.5616
+  Early mean: 1.2240
+  Non-early median: 0.0000
+  Early median: 0.0000
+
+Variable: number_diagnoses
+  U statistic: 555102381.000000
+  P-value: 2.677771769e-51
+  Adjusted P-value: 5.355543538e-51
+  Rank-biserial correlation: 0.081254
+  Non-early mean: 7.3887
+  Early mean: 7.6928
+  Non-early median: 8.0000
+  Early median: 9.0000
+
+======================================================================
+INTERPRETATION GUIDANCE
+======================================================================
+
+Categorical variables:
+- Chi-square tests whether the distribution of early readmission differs across categories.
+- Cramer's V describes the strength of association.
+
+Numerical/count variables:
+- Mann-Whitney U tests whether the distributions differ between early and non-early readmission groups.
+- Rank-biserial correlation describes the magnitude and direction of group separation.
+
+Multiple testing:
+- Benjamini-Hochberg false discovery rate correction was applied separately to categorical and numerical/count tests.
+
+Interpretation:
+- An adjusted p-value below 0.05 indicates statistical evidence of an association under the selected test.
+- Effect size should be considered alongside the p-value because large datasets can produce very small p-values for small differences.
+- None of these tests establish causality.
